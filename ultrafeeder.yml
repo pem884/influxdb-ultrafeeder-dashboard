@@ -317,9 +317,9 @@ spec:
 
         [[outputs.influxdb_v2]]
           urls = ["$INFLUX_HOST"]
-          token = "$INFLUX_TOKEN"
-          organization = "$INFLUX_ORG"
-          bucket = "$INFLUX_BUCKET"
+          token = "$INFLUX_DBV2TOKEN"
+          organization = "$INFLUXDBV2_ORG"
+          bucket = "$INFLUXDBV2_BUCKET"
 
         [[inputs.prometheus]]
           urls = ["http://localhost:9105/metrics"]
