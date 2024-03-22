@@ -4,7 +4,7 @@ metadata:
     name: fervent-dijkstra-184001
 spec:
     color: '#0b3a8d'
-    name: ADS-B
+    name: Ultrafeeder
 ---
 apiVersion: influxdata.com/v2alpha1
 kind: Bucket
@@ -14,7 +14,7 @@ spec:
     associations:
       - kind: Label
         name: fervent-dijkstra-184001
-    name: ads-b
+    name: ultrafeeder
 ---
 apiVersion: influxdata.com/v2alpha1
 kind: Dashboard
@@ -247,7 +247,7 @@ spec:
         staticLegend: {}
         width: 2
         xPos: 10
-    description: Metrics gathered from dump1090exporter to visualize your ADS-B flight
+    description: Metrics gathered from Ultrafeeder to visualize your ADS-B flight
         tracking station.
     name: ADS-B Flight Tracker
 ---
@@ -323,5 +323,5 @@ spec:
 
         [[inputs.prometheus]]
           urls = ["http://localhost:9105/metrics"]
-    description: Collect ADSB metrics from dump1090 Prometheus export
-    name: ADS-B
+    description: Collect ADSB metrics from Ultrafeeder export
+    name: Ultrafeeder
